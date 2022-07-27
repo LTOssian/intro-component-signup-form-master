@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #FF7978;
+}
+
+body {
+  height: 100%;
+  background-image: url(/images/bg-intro-desktop.png);
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+main .hero {
+  color: white;
+}
+
+main .hero h1 {
+  font-size: 5.2rem;
+  line-height: 5.5rem;
+  font-weight: 600;
+}
+
+main .hero p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+main .call-to-action {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main .call-to-action .promo-banner {
+  background: #5D54A3;
+  width: 540px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .call-to-action .promo-banner p {
+  font-size: 16px;
+  color: #A59FD1;
+}
+
+main .call-to-action .promo-banner p span {
+  font-weight: bold;
+}
