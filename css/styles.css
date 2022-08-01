@@ -17,13 +17,16 @@ body {
 }
 
 main {
+  height: 100%;
   margin: auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 main .hero {
+  width: 500px;
   color: white;
 }
 
@@ -31,11 +34,12 @@ main .hero h1 {
   font-size: 5.2rem;
   line-height: 5.5rem;
   font-weight: 600;
+  margin-bottom: 25px;
 }
 
 main .hero p {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2.5rem;
 }
 
@@ -46,8 +50,10 @@ main .call-to-action {
 
 main .call-to-action .promo-banner {
   background: #5D54A3;
-  width: 540px;
-  height: 60px;
+  max-width: 54rem;
+  padding: 2rem;
+  margin-bottom: 25px;
+  border: 1px solid #824A7B;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -56,9 +62,103 @@ main .call-to-action .promo-banner {
 
 main .call-to-action .promo-banner p {
   font-size: 16px;
-  color: #A59FD1;
+  color: white;
+  font-weight: 400;
 }
 
 main .call-to-action .promo-banner p span {
-  font-weight: bold;
+  font-weight: 700;
+}
+
+main .call-to-action form {
+  width: 540px;
+  height: 474px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main .call-to-action form .input-style {
+  display: inherit;
+  flex-flow: inherit;
+  width: 460px;
+  height: 389px;
+}
+
+main .call-to-action form .input-style input {
+  height: 56px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #DCDCDC;
+  transition: ease-in 120ms;
+  text-indent: 30px;
+}
+
+main .call-to-action form .input-style input:first-child {
+  margin-top: 0;
+}
+
+main .call-to-action form .input-style input:focus, main .call-to-action form .input-style input:hover, main .call-to-action form .input-style input:active {
+  border: 1px solid #615C7C;
+  transition: ease-in 120ms;
+}
+
+main .call-to-action form .input-style button {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 460px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #38cc89;
+  border: 1px solid #5cb791;
+  border-bottom: 4px solid #5cb791;
+  transition: ease-in 120ms;
+  margin-top: 10px;
+}
+
+main .call-to-action form .input-style button:hover {
+  cursor: pointer;
+  background-color: #88d3b1;
+}
+
+main .call-to-action form .input-style p {
+  margin: 10px 45px 0 45px;
+  color: #B8B7BF;
+}
+
+main .call-to-action form .input-style p strong {
+  color: #E59196;
+}
+
+.shadow {
+  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.animation_fadeDown {
+  animation-name: fadeDown;
+  animation-duration: 1s;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.animation_fadeUp {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }

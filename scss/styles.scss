@@ -18,20 +18,24 @@ body {
 
 }
     main {
+        height: 100%;
         margin:auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
         .hero {
+            width: 500px;
             color: white;
             h1 {
                 font-size: 5.2rem;
                 line-height: 5.5rem;
                 font-weight: 600;
+                margin-bottom: 25px;
             }
             p {
                 font-size: 1.5rem;
-                font-weight: 500;
+                font-weight: 400;
                 line-height: 2.5rem;;
             }
         }
@@ -39,14 +43,14 @@ body {
         .call-to-action {
             display: flex;
             flex-flow: column nowrap;
-
-            .shadow {
-
-            }
+            
             .promo-banner {
                 background: #5D54A3;
-                width: 540px;
-                height: 60px;
+                max-width: 54rem;
+                padding: 2rem;
+
+                margin-bottom: 25px;
+                border: 1px solid #824A7B;
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -54,12 +58,108 @@ body {
 
                 p {
                     font-size: 16px;
-                    color: #A59FD1;
+                    color: white;
+                    font-weight: 400;
                     span {
-                        font-weight: bold;
+                        font-weight: 700;
                     }
                 }
             }
 
+            form {
+                width: 540px;
+                height: 474px;
+                background: white;
+                border-radius: 10px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+
+                .input-style {
+                    display: inherit;
+                    flex-flow: inherit;
+                    width: 460px;
+                    height: 389px;
+
+                    input {
+                        height: 56px;
+                        width: 100%;
+                        margin: 10px 0;
+                        border-radius: 6px;
+                        border: 1px solid #DCDCDC;
+                        transition: ease-in 120ms;
+                        text-indent: 30px;
+                    }
+                    input:first-child {
+                        margin-top: 0;
+                    }
+                    
+                    input:focus, input:hover, input:active {
+                        border: 1px solid #615C7C;
+                        transition: ease-in 120ms;
+                    }
+                    button {
+                        color: white;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        width: 460px;
+                        height: 56px;
+                        border-radius: 5px;
+                        background-color: hsl(153,59,51);
+                        border: 1px solid hsl(155,39,54);
+                        border-bottom: 4px solid hsl(155,39,54);
+                        transition: ease-in 120ms;
+                        margin-top: 10px;
+                        
+                    }
+                    button:hover {
+                        cursor: pointer;
+                        background-color: hsl(153, 46, 68);
+                    }
+
+                    p {
+                        margin: 10px 45px 0 45px;
+                        color: #B8B7BF;
+
+                        strong {
+                            color: #E59196;
+                        }
+                    }
+                }
+
+                
+
+            }
+
+        }
+    }
+
+    .shadow {
+        box-shadow: 0 7px 4px hsla(0,0,0,0.25);
+    }
+
+    .animation_fadeDown {
+        animation-name: fadeDown;
+        animation-duration: 1s;
+
+    }
+
+    @keyframes fadeDown {
+
+        0% {
+            opacity: 0;
+            transform: translate3d(0,-100%,0);
+        }
+    }
+
+    .animation_fadeUp {
+        animation-name: fadeUp;
+        animation-duration: 1s;
+    }
+    @keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0,100%,0);
         }
     }
