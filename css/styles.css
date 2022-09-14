@@ -14,6 +14,7 @@ html {
 body {
   height: 100%;
   background-image: url("../images/bg-intro-desktop.png");
+  background-size: cover;
 }
 
 main {
@@ -168,6 +169,7 @@ main .call-to-action form .input-style p strong {
   main {
     justify-content: unset;
     flex-flow: column;
+    padding-top: 25px;
   }
   main .hero {
     width: 370px;

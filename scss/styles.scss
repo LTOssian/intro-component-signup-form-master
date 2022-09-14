@@ -15,7 +15,7 @@ html {
 body {
     height: 100%;
     background-image: url('../images/bg-intro-desktop.png');
-
+    background-size: cover;
 }
     main {
         height: 100%;
@@ -169,6 +169,7 @@ body {
         main {
             justify-content: unset;
             flex-flow: column;
+            padding-top: 25px;
              .hero {
                 width: 370px;
                 text-align: center;
