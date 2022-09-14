@@ -166,6 +166,7 @@ main .call-to-action form .input-style p strong {
 
 @media only screen and (max-width: 1024px) {
   main {
+    justify-content: unset;
     flex-flow: column;
   }
   main .hero {
